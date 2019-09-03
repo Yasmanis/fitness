@@ -28,27 +28,15 @@
                                 <h2 class="card-header">¿Cómo de activo estás últimamente?</h2>
                                 <div class="card-body">
                                     <ul class="list-group list-group-flush text-left">
+                                        @foreach ($fitness_actives as $item)
                                         <li class="list-group-control">
-                                            <label class="custom-control custom-radio">
-                                                <input name="radio" type="radio" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Hago ejercicio regularmente</span>
-                                            </label>
-                                        </li>
-                                        <li class="list-group-control">
-                                            <label class="custom-control custom-radio">
-                                                <input name="radio" type="radio" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Paso por distintas fases</span>
-                                            </label>
-                                        </li>
-                                        <li class="list-group-control">
-                                            <label class="custom-control custom-radio">
-                                                <input name="radio" type="radio" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Considerame un novato</span>
-                                            </label>
-                                        </li>
+                                                <label class="custom-control custom-radio">
+                                                    <input name="fitness_active" value="{{$item->id}}" type="radio" class="custom-control-input">
+                                                    <span class="custom-control-indicator"></span>
+                                                    <span class="custom-control-description">{{$item->option}}</span>
+                                                </label>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
                                 <div class="card-footer">
@@ -61,62 +49,15 @@
                                 <h2 class="card-header">¿Con que objetivo quieres empezar?</h2>
                                 <div class="card-body">
                                     <ul class="list-group list-group-flush text-left">
-                                        <li class="list-group-control">
-                                            <label class="custom-control custom-radio">
-                                                <input name="radio" type="radio" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">A perder peso</span>
-                                            </label>
-                                        </li>
-                                        <li class="list-group-control">
-                                            <label class="custom-control custom-radio">
-                                                <input name="radio" type="radio" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Fortalecer el torso</span>
-                                            </label>
-                                        </li>
-                                        <li class="list-group-control">
-                                            <label class="custom-control custom-radio">
-                                                <input name="radio" type="radio" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Objetivo tren superior</span>
-                                            </label>
-                                        </li>
-                                        <li class="list-group-control">
-                                            <label class="custom-control custom-radio">
-                                                <input name="radio" type="radio" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Objetivo tren inferior</span>
-                                            </label>
-                                        </li>
-                                        <li class="list-group-control">
-                                            <label class="custom-control custom-radio">
-                                                <input name="radio" type="radio" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Desarrollar músculo</span>
-                                            </label>
-                                        </li>
-                                        <li class="list-group-control">
-                                            <label class="custom-control custom-radio">
-                                                <input name="radio" type="radio" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Tonificar músculo</span>
-                                            </label>
-                                        </li>
-                                        <li class="list-group-control">
-                                            <label class="custom-control custom-radio">
-                                                <input name="radio" type="radio" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Mejorar resistencia</span>
-                                            </label>
-                                        </li>
-                                        <li class="list-group-control">
-                                            <label class="custom-control custom-radio">
-                                                <input name="radio" type="radio" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Mejorar flexibilidad</span>
-                                            </label>
-                                        </li>
+                                        @foreach ($fitness_objectives as $item)
+                                            <li class="list-group-control">
+                                                <label class="custom-control custom-radio">
+                                                    <input name="fitness_objective" value="{{$item->id}}" type="radio" class="custom-control-input">
+                                                    <span class="custom-control-indicator"></span>
+                                                    <span class="custom-control-description">{{$item->option}}</span>
+                                                </label>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
                                 <div class="card-footer">
@@ -135,46 +76,13 @@
                                                 <div class="card-body">
                                                     <div class="text-justify">
                                                         <h5 class="card-title">Conditioning</h5>
-                                                        <label class="custom-control material-checkbox">
-                                                            <input type="checkbox" class="material-control-input">
-                                                            <span class="material-control-indicator"></span>
-                                                            <span class="material-control-description">Strengthen & Tone</span>
-                                                        </label>
-                                                        <label class="custom-control material-checkbox">
-                                                            <input type="checkbox" class="material-control-input">
-                                                            <span class="material-control-indicator"></span>
-                                                            <span class="material-control-description">Campo de entrenamiento</span>
-                                                        </label>
-                                                        <label class="custom-control material-checkbox">
-                                                            <input type="checkbox" class="material-control-input">
-                                                            <span class="material-control-indicator"></span>
-                                                            <span class="material-control-description">Weight Loss</span>
-                                                        </label>
-                                                        <label class="custom-control material-checkbox">
-                                                            <input type="checkbox" class="material-control-input">
-                                                            <span class="material-control-indicator"></span>
-                                                            <span class="material-control-description">Aerobics</span>
-                                                        </label>
-                                                        <label class="custom-control material-checkbox">
-                                                            <input type="checkbox" class="material-control-input">
-                                                            <span class="material-control-indicator"></span>
-                                                            <span class="material-control-description">Tabata</span>
-                                                        </label>
-                                                        <label class="custom-control material-checkbox">
-                                                            <input type="checkbox" class="material-control-input">
-                                                            <span class="material-control-indicator"></span>
-                                                            <span class="material-control-description">HIIT/Interval</span>
-                                                        </label>
-                                                        <label class="custom-control material-checkbox">
-                                                            <input type="checkbox" class="material-control-input">
-                                                            <span class="material-control-indicator"></span>
-                                                            <span class="material-control-description">Peso Corporal</span>
-                                                        </label>
-                                                        <label class="custom-control material-checkbox">
-                                                            <input type="checkbox" class="material-control-input">
-                                                            <span class="material-control-indicator"></span>
-                                                            <span class="material-control-description">Stay Fit Lifestyle</span>
-                                                        </label>
+                                                        @foreach ($conditions as $item)
+                                                            <label class="custom-control material-checkbox">
+                                                                <input type="checkbox" class="material-control-input" name="conditions" value="{{$item->id}}">
+                                                                <span class="material-control-indicator"></span>
+                                                                <span class="material-control-description">{{$item->name}}</span>
+                                                            </label>
+                                                        @endforeach
                                                     </div>
                                                 </div>
                                             </div>
