@@ -3,9 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\FitnessActive;
 use App\FitnessObjective;
 use App\Condition;
+use App\FunctionalTraining;
+use App\DietNutrition;
+use App\HealthCondition;
 
 class HomeController extends Controller
 {
@@ -29,8 +33,11 @@ class HomeController extends Controller
         $fitness_actives = FitnessActive::all();
         $fitness_objectives = FitnessObjective::all();
         $conditions = Condition::all();
+        $functional_training = FunctionalTraining::all();
+        $diet_nutrition = DietNutrition::all();
+        $health_conditions = HealthCondition::all();
 
-        return view('dashboard.home',compact('fitness_actives','fitness_objectives','conditions'));
+        return view('dashboard.home',compact('fitness_actives','fitness_objectives','conditions','functional_training','diet_nutrition','health_conditions'));
     }
 
     public function user_card()

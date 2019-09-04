@@ -255,6 +255,9 @@
 
 <!-- Custom scripts for custom Bootstrap 4 controls-->
 {{--    <script src="{{ asset('theme/dashboard/custom_controls/js/styles.js') }}"></script>--}}
+
+@stack('scripts')
+
 </body>
 
 </html>
