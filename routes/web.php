@@ -26,3 +26,26 @@ Route::get('/user-tanita', 'HomeController@user_tanita')->name('user-tanita');
 Route::post('/new_fitness_evaluation','Fitness_Evaluation@store')->name('new_fitness_evaluation');
 Route::post('/user_ficha','User_Ficha@store')->name('user_ficha');
 Route::post('/user_medical_history','UserMedicalHistoryController@store')->name('user_medical_history');
+
+//ver los test
+Route::get('/test/pliegues_perimetros', 'TestController@getpliegues_perimetros')->name('getpliegues_perimetros');
+Route::get('/test/fms', 'TestController@getfms')->name('getfms');
+Route::get('/test/plancha_prono', 'TestController@getplancha_prono')->name('getplancha_prono');
+Route::get('/test/burpees', 'TestController@getburpees')->name('getburpees');
+Route::get('/test/domin_susp_isométrica', 'TestController@getdomin_susp_isométrica')->name('getdomin_susp_isométrica');
+Route::get('/test/cooper', 'TestController@getcooper')->name('getcooper');
+Route::get('/test/ruffier', 'TestController@getruffier')->name('getruffier');
+Route::get('/test/salto_vertical', 'TestController@getsalto_vertical')->name('getsalto_vertical');
+Route::get('/test/rockport', 'TestController@getrockport')->name('getrockport');
+
+
+//guardar los Test creados
+Route::post('/storeplieguesperimetrosTest','TestController@storeplieguesperimetrosTest')->name('storeplieguesperimetrosTest');
+Route::post('/storefmsTest','TestController@storefmsTest')->name('storefmsTest');
+Route::post('/storeplanchapronoTest','TestController@storeplanchapronoTest')->name('storeplanchapronoTest');
+Route::post('/storeburpeesTest','TestController@storeburpeesTest')->name('storeburpeesTest');
+Route::post('/storedom_susp_isometricoTest','TestController@storedom_susp_isometricoTest')->name('storedom_susp_isometricoTest');
+Route::post('/storecooperTest','TestController@storecooperTest')->name('storecooperTest');
+Route::post('/storeruffierTest','TestController@storeruffierTest')->name('storeruffierTest');
+Route::post('/storesalto_verticalTest','TestController@storesalto_verticalTest')->name('storesalto_verticalTest');
+Route::post('/storerockportTest','TestController@storerockportTest')->name('storerockportTest');

@@ -40,7 +40,11 @@
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-test1" role="tabpanel" aria-labelledby="pills-test1-tab">
+
+                {{-- <div class="tab-pane fade show active" id="pills-test1" role="tabpanel" aria-labelledby="pills-test1-tab">
+                    <form method="POST" action="{{route('storeplieguesperimetrosTest')}}">
+                        @csrf
+                        <input type="hidden" name="user_id" value="{{auth()->id()}}">
                     <table class="table table-hover table-bordered">
                         <thead>
                         <tr>
@@ -51,49 +55,60 @@
                         <tbody>
                         <tr>
                             <td>Tripcipital</td>
-                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="number" name="tripcipital" required></td>
                             <td>Brazo</td>
-                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="number" name="brazo" required></td>
                         </tr>
                         <tr>
                             <td>Gemelo</td>
-                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="number" name="plieguesgemelo" required></td>
                             <td>Pecho</td>
-                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="number" name="pecho" required></td>
                         </tr>
                         <tr>
                             <td>Subescapular</td>
-                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="number" name="subescapular" required></td>
                             <td>Abdomen</td>
-                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="number" name="abdomen" required></td>
                         </tr>
                         <tr>
                             <td>Suprailíaco</td>
-                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="number" name="suprailiaco" required></td>
                             <td>Cadera</td>
-                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="number" name="cadera" required></td>
                         </tr>
                         <tr>
                             <td>Abdominal</td>
-                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="number" name="abdominal" required></td>
                             <td>Muslo</td>
-                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="number" name="muslo" required></td>
                         </tr>
                         <tr>
                             <td colspan="2"></td>
                             <td>Gemelo</td>
-                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td class="w-25"><input class="text-center h-100 w-100 border-0" type="number" name="perimetrogemelo" required></td>
                         </tr>
                         </tbody>
                     </table>
+                    @if (session()->has('infoplieguesperimetrosTest'))
+                        <div class="alert alert-success text-center" role="alert">
+                            <strong>{{ session('infoplieguesperimetrosTest') }}!</strong>
+                        </div>
+                    @endif
                     <div class="d-flex mb-3">
                         <div class="ml-auto">
-                            <button type="button" class="btn btn-primary">Guardar</button>
+                            <input type="submit" class="btn btn-primary" value="Guardar">
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="pills-test2" role="tabpanel" aria-labelledby="pills-test2-tab">
-                        <div class="card mb-3">
+                </form>
+                </div> --}}
+                
+                {{-- <div class="tab-pane fade" id="pills-test2" role="tabpanel" aria-labelledby="pills-test2-tab">
+                    
+                    <form method="POST" action="{{route('storefmsTest')}}">
+                        @csrf
+                        <input type="hidden" name="user_id" value="{{auth()->id()}}">
+                    <div class="card mb-3">
                             <div class="card-header font-weight-bold text-center bg-warning"><i class="fa fa-fw fa-exclamation-triangle"></i>DESCRIPCIÓN DE LA PRUEBA</div>
                             <div class="card-body text-justify">
                                 <p class="card-text">Esta prueba se basa en evaluar la movilidad o rango de movimiento del usuario y, dependiendo de los resultados, tanto individuales como colectivos, determinar si dicha persona necesita evaluación médica urgente o necesita tratamiento especial para mejorar la falta de movilidad en las zonas de las que carece de la misma.</p>
@@ -112,8 +127,8 @@
                             <tr>
                                 <td>Sentadillas con brazos</td>
                                 <td colspan="2"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="santadillasPF" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="santadillasObservaciones" required></td>
                             </tr>
                             <tr>
                                 <td colspan="1"></td>
@@ -123,38 +138,38 @@
                             </tr>
                             <tr>
                                 <td class="w-20">Paso de valla</td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>                              
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="paso_vallaI" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="paso_vallaD" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="paso_vallaPF" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="paso_vallaObservaciones" required></td>                              
                             </tr>
                             <tr>
                                 <td class="w-20">Estocada en línea</td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>                              
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="estocada_lineaI" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="estocada_lineaD" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="estocada_lineaPF" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="estocada_lineaObservaciones" required></td>                              
                             </tr>
                             <tr>
                                 <td class="w-20">Movilidad de hombros</td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>                              
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="movilidad_hombrosI" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="movilidad_hombrosD" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="movilidad_hombrosPF" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="movilidad_hombrosObservaciones" required></td>                              
                             </tr>
                             <tr>
                                 <td class="w-20">Elevación activa con pierna recta</td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>                              
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="elev_activa_pierna_rectaI" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="elev_activa_pierna_rectaD" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="elev_activa_pierna_rectaPF" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="elev_activa_pierna_rectaObservaciones" required></td>                              
                             </tr>
                             <tr>
                                 <td class="w-20">Estabilidad de tronco en flexión</td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>                              
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="estab_tronco_en_flexionI" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="estab_tronco_en_flexionD" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="estab_tronco_en_flexionPF" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="estab_tronco_en_flexionObservaciones" required></td>                              
                             </tr>
                             <tr>
                                 <td colspan="1"></td>
@@ -164,21 +179,26 @@
                             </tr>
                             <tr>
                                 <td class="w-20">Estabilidad de tronco en rotación</td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>
-                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text"></td>                              
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="estab_tronco_en_rotacionI" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="estab_tronco_en_rotacionD" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="estab_tronco_en_rotacionPF" required></td>
+                                <td class="w-20"><input class="text-center h-100 w-100 border-0" type="text" name="estab_tronco_en_rotacionObservaciones" required></td>                              
                             </tr>
                             <tr>
                                 <td colspan="3"></td>
-                                <td class="text-center">Total: <input class="text-center h-100 w-50 border-0" type="text"></td>
+                                <td class="text-center">Total: <input class="text-center h-100 w-50 border-0" type="text" name="total" required></td>
                                 <td colspan="1"></td>
                             </tr>
                         </tbody>
                     </table>
+                    @if (session()->has('infofmsTest'))
+                        <div class="alert alert-success text-center" role="alert">
+                            <strong>{{ session('infofmsTest') }}!</strong>
+                        </div>
+                    @endif
                     <div class="d-flex mb-3">
                         <div class="ml-auto">
-                            <button type="button" class="btn btn-primary">Guardar</button>
+                            <input type="submit" class="btn btn-primary" value="Guardar">
                         </div>
                     </div>
                     <div class="card">
@@ -187,9 +207,14 @@
                           <p><span class="font-weight-bold">MUJER:</span> Nivel aceptable de calidad de movimiento >16</p>
                       </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="pills-test3" role="tabpanel" aria-labelledby="pills-test3-tab">
-                        <div class="card mb-3">
+                    </form>
+                </div> --}}
+                {{-- <div class="tab-pane fade" id="pills-test3" role="tabpanel" aria-labelledby="pills-test3-tab">
+                        
+                    <form method="POST" action="{{route('storeplanchapronoTest')}}">
+                        @csrf
+                        <input type="hidden" name="user_id" value="{{auth()->id()}}">
+                    <div class="card mb-3">
                             <div class="card-header font-weight-bold text-center bg-warning"><i class="fa fa-fw fa-exclamation-triangle"></i>DESCRIPCIÓN DE LA PRUEBA</div>
                             <div class="card-body text-justify">
                                 <p class="card-text m-1"><span class="font-weight-bold">OBJETIVO: </span>Medir la resistencia muscular localzada.</p>            
@@ -262,21 +287,31 @@
                                     <tbody>
                                         <tr>
                                             <td class="w-35 text-center">{{ Auth::user()->name }}</td>
-                                            <td class="w-30"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                                            <td class="w-30"><input class="text-center h-100 w-100 border-0" type="text" name="resultados" required></td>
                                             <td class="w-35 text-center"> <a href="#">Ficha {{ Auth::user()->name }}</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
+                        @if (session()->has('infoplanchapronoTest'))
+                            <div class="alert alert-success text-center" role="alert">
+                                <strong>{{ session('infoplanchapronoTest') }}!</strong>
+                            </div>
+                        @endif
                         <div class="d-flex mb-3">
                             <div class="ml-auto">
-                                <button type="button" class="btn btn-primary">Guardar</button>
+                                <input type="submit" class="btn btn-primary" value="Guardar">
                             </div>
                         </div>
-                </div>
-                <div class="tab-pane fade" id="pills-test4" role="tabpanel" aria-labelledby="pills-test4-tab">
-                        <div class="card mb-3">
+                    </form>
+                </div> --}}
+                {{-- <div class="tab-pane fade" id="pills-test4" role="tabpanel" aria-labelledby="pills-test4-tab">
+                        
+                    <form method="POST" action="{{route('storeburpeesTest')}}">
+                        @csrf
+                        <input type="hidden" name="user_id" value="{{auth()->id()}}">
+                    <div class="card mb-3">
                             <div class="card-header font-weight-bold text-center bg-warning"><i class="fa fa-fw fa-exclamation-triangle"></i>DESCRIPCIÓN DE LA PRUEBA</div>
                             <div class="card-body text-justify">
                                 <p class="card-text m-1"><span class="font-weight-bold">OBJETIVO: </span>Medir la resistencia anaeróbica láctica.</p>            
@@ -365,20 +400,26 @@
                                     <tbody>
                                         <tr>
                                             <td class="w-35 text-center">{{ Auth::user()->name }}</td>
-                                            <td class="w-30"><input class="text-center h-100 w-100 border-0" type="text"></td>
+                                            <td class="w-30"><input class="text-center h-100 w-100 border-0" type="text" name="resultados" required></td>
                                             <td class="w-35 text-center"> <a href="#">Ficha {{ Auth::user()->name }}</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
+                        @if (session()->has('infoburpeesTest'))
+                            <div class="alert alert-success text-center" role="alert">
+                                <strong>{{ session('infoburpeesTest') }}!</strong>
+                            </div>
+                        @endif
                         <div class="d-flex mb-3">
                             <div class="ml-auto">
-                                <button type="button" class="btn btn-primary">Guardar</button>
+                                <input type="submit" class="btn btn-primary" value="Guardar">
                             </div>
                         </div>
-                </div>
-                <div class="tab-pane fade" id="pills-test5" role="tabpanel" aria-labelledby="pills-test5-tab">
+                    </form>
+                </div> --}}
+                {{-- <div class="tab-pane fade" id="pills-test5" role="tabpanel" aria-labelledby="pills-test5-tab">
                         <div class="card mb-3">
                             <div class="card-header font-weight-bold text-center bg-warning"><i class="fa fa-fw fa-exclamation-triangle"></i>DESCRIPCIÓN DE LA PRUEBA</div>
                             <div class="card-body text-justify">
@@ -532,8 +573,8 @@
                                 <button type="button" class="btn btn-primary">Guardar</button>
                             </div>
                         </div>
-                </div>
-                <div class="tab-pane fade" id="pills-test6" role="tabpanel" aria-labelledby="pills-test6-tab">
+                </div> --}}
+                {{-- <div class="tab-pane fade" id="pills-test6" role="tabpanel" aria-labelledby="pills-test6-tab">
                         <div class="card mb-3">
                             <div class="card-header font-weight-bold text-center bg-warning"><i class="fa fa-fw fa-exclamation-triangle"></i>DESCRIPCIÓN DE LA PRUEBA</div>
                             <div class="card-body text-justify">
@@ -675,8 +716,8 @@
                                     <button type="button" class="btn btn-primary">Guardar</button>
                                 </div>
                             </div>
-                </div>
-                <div class="tab-pane fade" id="pills-test7" role="tabpanel" aria-labelledby="pills-test7-tab">
+                </div> --}}
+                {{-- <div class="tab-pane fade" id="pills-test7" role="tabpanel" aria-labelledby="pills-test7-tab">
                     <div class="card mb-3">
                             <div class="card-header font-weight-bold text-center bg-warning"><i class="fa fa-fw fa-exclamation-triangle"></i>DESCRIPCIÓN DE LA PRUEBA</div>
                             <div class="card-body text-justify">
@@ -794,8 +835,8 @@
                                     <button type="button" class="btn btn-primary">Guardar</button>
                                 </div>
                             </div>
-                </div>
-                <div class="tab-pane fade" id="pills-test8" role="tabpanel" aria-labelledby="pills-test8-tab">
+                </div> --}}
+                {{-- <div class="tab-pane fade" id="pills-test8" role="tabpanel" aria-labelledby="pills-test8-tab">
                         <div class="card mb-3">
                             <div class="card-header font-weight-bold text-center bg-warning"><i class="fa fa-fw fa-exclamation-triangle"></i>DESCRIPCIÓN DE LA PRUEBA</div>
                             <div class="card-body text-justify">
@@ -861,8 +902,8 @@
                             <button type="button" class="btn btn-primary">Guardar</button>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="pills-test9" role="tabpanel" aria-labelledby="pills-test9-tab">
+                </div> --}}
+                {{-- <div class="tab-pane fade" id="pills-test9" role="tabpanel" aria-labelledby="pills-test9-tab">
                         <div class="container-fluid">
                             <div class="row">
                                 <h2 class="text-center">Baremo Masculino</h2>
@@ -1018,7 +1059,7 @@
                                     <button type="button" class="btn btn-primary">Guardar</button>
                                 </div>
                             </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

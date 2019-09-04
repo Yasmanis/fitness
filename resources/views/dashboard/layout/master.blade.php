@@ -53,31 +53,46 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tests">
-                <a class="nav-link" href="/user-tests">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-thermometer-empty"></i>
-                    <span class="nav-link-text">Tests</span>
-                </a>
+                    <span class="nav-link-text">Tests</span></a>
+                    <ul class="sidenav-second-level collapse" id="collapseComponents">
+                        <li>
+                            <a href="{{route('getpliegues_perimetros')}}">Pliegues y Perímetros</a>
+                        </li>
+                        <li>
+                            <a href="{{route('getfms')}}">FMS</a>
+                        </li>
+                        <li>
+                            <a href="{{route('getplancha_prono')}}">Plancha Prono</a>
+                        </li>
+                        <li>
+                            <a href="{{route('getburpees')}}">Burpees</a>
+                        </li>
+                        <li>
+                            <a href="{{route('getdomin_susp_isométrica')}}">Dominadas/Suspensión Isométrica</a>
+                        </li>
+                        <li>
+                            <a href="{{route('getcooper')}}">Cooper</a>
+                        </li>
+                        <li>
+                            <a href="{{route('getruffier')}}">Ruffier</a>
+                        </li>
+                        <li>
+                            <a href="{{route('getsalto_vertical')}}">Salto Vertical</a>
+                        </li>
+                        <li>
+                            <a href="{{route('getrockport')}}">Test de Rockport</a>
+                        </li>
+                    </ul>
+                
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tanita">
                     <a class="nav-link" href="/user-tanita">
                         <i class="fa fa-fw fa-balance-scale"></i>
                         <span class="nav-link-text">Tanita</span>
                     </a>
-                </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa-wrench"></i>
-                    <span class="nav-link-text">Components</span>
-                </a>
-                <ul class="sidenav-second-level collapse" id="collapseComponents">
-                    <li>
-                        <a href="#">Navbar</a>
-                    </li>
-                    <li>
-                        <a href="#">Cards</a>
-                    </li>
-                </ul>
-            </li>    
+                </li>   
         </ul>
         <ul class="navbar-nav sidenav-toggler">
             <li class="nav-item">
