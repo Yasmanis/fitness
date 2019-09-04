@@ -112,7 +112,6 @@ class TestController extends Controller
 
     public function storerockportTest(Request $request)
     {
-        RockportTest::create($request->all());
-        return back()->with('inforockportTest','Test Salvado');
+        RockportTest::create($request->all()); 
     }
 }
