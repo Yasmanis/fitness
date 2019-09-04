@@ -21,6 +21,9 @@
     <!-- Custom styles for custom Bootstrap 4 controls-->
     <link href="{{ asset('theme/dashboard/custom_controls/css/styles.css') }}" rel="stylesheet">
 
+    <!-- Custom styles for Training Plan-->
+    <link href="{{ asset('theme/training_plan_css/album.css') }}" rel="stylesheet">
+
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -63,7 +66,19 @@
                         <i class="fa fa-fw fa-balance-scale"></i>
                         <span class="nav-link-text">Tanita</span>
                     </a>
-                </li>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Crear Plan de Entrenamiento">
+                <a class="nav-link" href="/training-plan">
+                    <i class="fa fa-fw fa-calculator"></i>
+                    <span class="nav-link-text">Crear Plan de Entrenamiento</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Ver Plan de Entrenamiento">
+                <a class="nav-link" href="/training-plan-template">
+                    <i class="fa fa-fw fa-user-times"></i>
+                    <span class="nav-link-text">Ver Plan de Entrenamiento</span>
+                </a>
+            </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-wrench"></i>

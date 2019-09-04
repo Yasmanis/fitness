@@ -22,3 +22,8 @@ Route::get('/user-card', 'HomeController@user_card')->name('user-card');
 Route::get('/user-diagnosis', 'HomeController@user_diagnosis')->name('user-diagnosis');
 Route::get('/user-tests', 'HomeController@user_tests')->name('user-tests');
 Route::get('/user-tanita', 'HomeController@user_tanita')->name('user-tanita');
+
+Route::get('training-plan', 'UploadPlainController@training_plan')->name('training-plan');
+Route::post('training-plan', 'UploadPlainController@training_plan_post')->name('training-plan-post');
+
+Route::get('training-plan-template', 'UploadPlainController@training_plan_template')->name('training-plan-template');

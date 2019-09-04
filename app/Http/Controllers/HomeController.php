@@ -16,7 +16,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware(['auth','verified']);
+        $this->middleware(['auth', 'verified']);
     }
 
     /**
@@ -30,7 +30,7 @@ class HomeController extends Controller
         $fitness_objectives = FitnessObjective::all();
         $conditions = Condition::all();
 
-        return view('dashboard.home',compact('fitness_actives','fitness_objectives','conditions'));
+        return view('dashboard.home', compact('fitness_actives', 'fitness_objectives', 'conditions'));
     }
 
     public function user_card()
@@ -50,6 +50,6 @@ class HomeController extends Controller
 
     public function user_tanita()
     {
-        return view('dashboard.user_tanita'); 
+        return view('dashboard.user_tanita');
     }
 }
