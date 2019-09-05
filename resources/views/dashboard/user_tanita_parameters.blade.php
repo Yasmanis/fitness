@@ -12,7 +12,7 @@
       @csrf
         <div class="form-row">
           <div class="form-group col-md-4">
-            <label for="inputState">Usuario</label>
+            <label for="inputState">Usuarios</label>
             <select id="inputState" class="form-control">
               <option selected>Choose...</option>
               @foreach ($user_fichas as $item)
