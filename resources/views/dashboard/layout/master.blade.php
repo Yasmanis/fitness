@@ -43,6 +43,12 @@
                     <span class="nav-link-text">Dashboard</span>
                 </a>
             </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Evaluación Fitness">
+                <a class="nav-link" href="{{ route('fitness-evaluation') }}">
+                    <i class="fa fa-fw fa-address-card"></i>
+                    <span class="nav-link-text">Evaluación Fitness</span>
+                </a>
+            </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Ficha de Usuario">
                 <a class="nav-link" href="/user-card">
                     <i class="fa fa-fw fa-user"></i>

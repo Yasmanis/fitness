@@ -29,7 +29,13 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
     public function index()
+    {
+        return view('dashboard.home');
+    } 
+
+    public function fitness_evaluation()
     {
         $fitness_actives = FitnessActive::all();
         $fitness_objectives = FitnessObjective::all();
@@ -38,7 +44,7 @@ class HomeController extends Controller
         $diet_nutrition = DietNutrition::all();
         $health_conditions = HealthCondition::all();
 
-        return view('dashboard.home',compact('fitness_actives','fitness_objectives','conditions','functional_training','diet_nutrition','health_conditions'));
+        return view('dashboard.fitness_evaluation',compact('fitness_actives','fitness_objectives','conditions','functional_training','diet_nutrition','health_conditions'));
     }
 
     public function user_card()
