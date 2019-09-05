@@ -49,3 +49,8 @@ Route::post('/storecooperTest','TestController@storecooperTest')->name('storecoo
 Route::post('/storeruffierTest','TestController@storeruffierTest')->name('storeruffierTest');
 Route::post('/storesalto_verticalTest','TestController@storesalto_verticalTest')->name('storesalto_verticalTest');
 Route::post('/storerockportTest','TestController@storerockportTest')->name('storerockportTest');
+
+Route::get('training-plan', 'UploadPlainController@training_plan')->name('training-plan');
+Route::post('training-plan', 'UploadPlainController@training_plan_post')->name('training-plan-post');
+
+Route::get('training-plan-template', 'UploadPlainController@training_plan_template')->name('training-plan-template');

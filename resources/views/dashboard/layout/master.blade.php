@@ -95,37 +95,19 @@
                         <i class="fa fa-fw fa-balance-scale"></i>
                         <span class="nav-link-text">Tanita</span>
                     </a>
-<<<<<<< HEAD
                 </li>   
-=======
-            </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Crear Plan de Entrenamiento">
-                <a class="nav-link" href="/training-plan">
-                    <i class="fa fa-fw fa-calculator"></i>
-                    <span class="nav-link-text">Crear Plan de Entrenamiento</span>
-                </a>
-            </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Ver Plan de Entrenamiento">
-                <a class="nav-link" href="/training-plan-template">
-                    <i class="fa fa-fw fa-user-times"></i>
-                    <span class="nav-link-text">Ver Plan de Entrenamiento</span>
-                </a>
-            </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa-wrench"></i>
-                    <span class="nav-link-text">Components</span>
-                </a>
-                <ul class="sidenav-second-level collapse" id="collapseComponents">
-                    <li>
-                        <a href="#">Navbar</a>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Crear Plan de Entrenamiento">
+                        <a class="nav-link" href="/training-plan">
+                            <i class="fa fa-fw fa-calculator"></i>
+                            <span class="nav-link-text">Crear Plan de Entrenamiento</span>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">Cards</a>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Ver Plan de Entrenamiento">
+                        <a class="nav-link" href="/training-plan-template">
+                            <i class="fa fa-fw fa-user-times"></i>
+                            <span class="nav-link-text">Ver Plan de Entrenamiento</span>
+                        </a>
                     </li>
-                </ul>
-            </li>    
->>>>>>> 717b27b89fe30b6f6055da6830f14fa0b41bbb34
         </ul>
         <ul class="navbar-nav sidenav-toggler">
             <li class="nav-item">
