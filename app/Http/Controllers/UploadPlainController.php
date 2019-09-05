@@ -35,8 +35,6 @@ class UploadPlainController extends Controller
     public function training_plan_template()
     {
         $plan_entrenamiento = PlanEntrenamiento::all();
-        // dd($plan_entrenamiento);
-        //dd($plan_entrenamiento);
 
         return view('dashboard.plantilla', compact('plan_entrenamiento'));
     }
