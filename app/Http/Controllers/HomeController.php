@@ -10,6 +10,7 @@ use App\Condition;
 use App\FunctionalTraining;
 use App\DietNutrition;
 use App\HealthCondition;
+use App\UserFicha;
 
 class HomeController extends Controller
 {
@@ -62,6 +63,7 @@ class HomeController extends Controller
 
     public function user_tanita_parameters()
     {
-        return view('dashboard.user_tanita_parameters');
+        $user_fichas = UserFicha::all();
+        return view('dashboard.user_tanita_parameters',compact('user_fichas'));
     }
 }

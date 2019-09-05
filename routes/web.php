@@ -22,7 +22,7 @@ Route::get('/user-card', 'HomeController@user_card')->name('user-card');
 Route::get('/user-diagnosis', 'HomeController@user_diagnosis')->name('user-diagnosis');
 Route::get('/user-tests', 'HomeController@user_tests')->name('user-tests');
 Route::get('/user-tanita', 'HomeController@user_tanita')->name('user-tanita');
-Route::get('/user-tanita-parameters', 'HomeController@user_tanita_parameters')->name('user-tanita-parameters');
+
 
 
 Route::post('/new_fitness_evaluation','Fitness_Evaluation@store')->name('new_fitness_evaluation');
@@ -40,7 +40,6 @@ Route::get('/test/ruffier', 'TestController@getruffier')->name('getruffier');
 Route::get('/test/salto_vertical', 'TestController@getsalto_vertical')->name('getsalto_vertical');
 Route::get('/test/rockport', 'TestController@getrockport')->name('getrockport');
 
-
 //guardar los Test creados
 Route::post('/storeplieguesperimetrosTest','TestController@storeplieguesperimetrosTest')->name('storeplieguesperimetrosTest');
 Route::post('/storefmsTest','TestController@storefmsTest')->name('storefmsTest');
@@ -51,6 +50,11 @@ Route::post('/storecooperTest','TestController@storecooperTest')->name('storecoo
 Route::post('/storeruffierTest','TestController@storeruffierTest')->name('storeruffierTest');
 Route::post('/storesalto_verticalTest','TestController@storesalto_verticalTest')->name('storesalto_verticalTest');
 Route::post('/storerockportTest','TestController@storerockportTest')->name('storerockportTest');
+
+//tanita
+Route::get('/user-tanita-parameters', 'HomeController@user_tanita_parameters')->name('user-tanita-parameters');
+Route::post('/user-tanita-parameters','TanitaParametrosController@store')->name('user-tanita-parameters');
+
 
 Route::get('training-plan', 'UploadPlainController@training_plan')->name('training-plan');
 Route::post('training-plan', 'UploadPlainController@training_plan_post')->name('training-plan-post');
