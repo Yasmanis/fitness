@@ -59,4 +59,9 @@ class HomeController extends Controller
     {
         return view('dashboard.user_tanita');
     }
+
+    public function user_tanita_parameters()
+    {
+        return view('dashboard.user_tanita_parameters');
+    }
 }

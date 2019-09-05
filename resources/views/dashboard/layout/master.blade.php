@@ -95,7 +95,13 @@
                         <i class="fa fa-fw fa-balance-scale"></i>
                         <span class="nav-link-text">Tanita</span>
                     </a>
-                </li>   
+                </li> 
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Parámetros Tanita">
+                        <a class="nav-link" href="/user-tanita-parameters">
+                            <i class="fa fa-fw fa-ambulance"></i>
+                            <span class="nav-link-text">Parámetros Tanita</span>
+                        </a>
+                    </li>   
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Crear Plan de Entrenamiento">
                         <a class="nav-link" href="/training-plan">
                             <i class="fa fa-fw fa-calculator"></i>

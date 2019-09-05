@@ -9,39 +9,19 @@
 </ol>
 <div class="row">
     <div class="col-12">
-        <div class="form-row">
-            <div class="form-group col-md-4">
-                <label for="phone">Teléfono de Contacto:</label>
-                <input type="number" class="form-control" id="phone" placeholder="Teléfono">
-            </div>
-            <div class="form-group col-md-4">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" class="form-control" id="email" placeholder="Correo">
-            </div>
-            <div class="form-group col-md-4">
-                <label for="profile">Perfil Tanita:</label>
-                <select id="profile" class="form-control">
-                    <option selected>Choose...</option>
-                    <option value="Mujer no deportista">Mujer no deportista</option>
-                    <option value="Mujer deportista">Mujer deportista</option>
-                    <option value="Hombre no deportista">Hombre no deportista</option>
-                    <option value="Hombre deportista">Hombre deportista</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-4">
-                <label for="age">Edad:</label>
-                <input type="number" class="form-control" id="age" placeholder="Edad">
-            </div>
-            <div class="form-group col-md-4">
-                <label for="height">Estatura:</label>
-                <input type="number" class="form-control" id="height" placeholder="Estatura">
-            </div>
-        </div>                        
+            <form class="form-inline">
+                <div class="form-group mb-2 col">
+                    <label for="inputState">Usuario</label>
+                    <select id="inputState" class="form-control col-md-3 ml-3 mr-3">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                </div>                    
+            </form>  
     </div>
 </div>
-<div class="row">
+<div class="row mb-3">
     <table class="table table-hover table-bordered">
         <thead>
             <tr>
@@ -60,7 +40,7 @@
                 <th class="text-center">DIC</th>
             </tr>
         </thead>
-        <tbody>lo
+        <tbody>
             <tr>
                 <td>Peso(Kg):</td>
                 <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
