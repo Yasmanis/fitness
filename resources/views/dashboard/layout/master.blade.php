@@ -96,6 +96,41 @@
                     </ul>
                 
             </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Visualización Tests">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents1" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-thermometer-empty"></i>
+                    <span class="nav-link-text">Visualización Tests</span></a>
+                    <ul class="sidenav-second-level collapse" id="collapseComponents1">
+                        <li>
+                            <a href="{{route('vgetpliegues_perimetros')}}">Pliegues y Perímetros</a>
+                        </li>
+                        <li>
+                            <a href="{{route('vgetfms')}}">FMS</a>
+                        </li>
+                        <li>
+                            <a href="{{route('vgetplancha_prono')}}">Plancha Prono</a>
+                        </li>
+                        <li>
+                            <a href="{{route('vgetburpees')}}">Burpees</a>
+                        </li>
+                        <li>
+                            <a href="{{route('vgetdomin_susp_isométrica')}}">Dominadas/Suspensión Isométrica</a>
+                        </li>
+                        <li>
+                            <a href="{{route('vgetcooper')}}">Cooper</a>
+                        </li>
+                        <li>
+                            <a href="{{route('vgetruffier')}}">Ruffier</a>
+                        </li>
+                        <li>
+                            <a href="{{route('vgetsalto_vertical')}}">Salto Vertical</a>
+                        </li>
+                        <li>
+                            <a href="{{route('vgetrockport')}}">Test de Rockport</a>
+                        </li>
+                    </ul>
+                
+            </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tanita">
                     <a class="nav-link" href="/user-tanita">
                         <i class="fa fa-fw fa-balance-scale"></i>

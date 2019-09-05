@@ -13,7 +13,7 @@
         <div class="form-row">
           <div class="form-group col-md-4">
             <label for="inputState">Usuario</label>
-            <select id="inputState" class="form-control">
+            <select id="inputState" name="user_id" class="form-control">
               <option selected>Choose...</option>
               @foreach ($user_fichas as $item)
                 <option value="{{$item->id}}">{{$item->name}}</option>
