@@ -8,9 +8,9 @@
     <li class="breadcrumb-item active">Tanita</li>
 </ol>
 <div class="container">
-        <div class="row">
+        {{-- <div class="row">
                 <div class="col-12">
-                        {{-- <form method="POST" action="{{route('storeplieguesperimetrosTest')}}" class="form-inline">
+                        <form method="POST" action="{{route('storeplieguesperimetrosTest')}}" class="form-inline">
                                 @csrf
                             <div class="form-group mb-2 col">
                                 <label for="inputState">Usuario</label>
@@ -22,9 +22,9 @@
                                       </select>
                                 <button type="submit" class="btn btn-primary mb-2">Submit</button>
                             </div>                    
-                        </form> --}}  
+                        </form>  
                 </div>
-            </div>
+            </div> --}}
             <div class="row mb-3">
                 <table class="table table-hover table-bordered">
                     <thead>
