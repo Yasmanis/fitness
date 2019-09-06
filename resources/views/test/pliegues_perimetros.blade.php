@@ -23,7 +23,26 @@
                     <div class="tab-pane fade show active" id="pills-test1" role="tabpanel" aria-labelledby="pills-test1-tab">
                             <form method="POST" action="{{route('storeplieguesperimetrosTest')}}">
                                 @csrf
-                                <input type="hidden" name="user_id" value="{{auth()->id()}}">
+                                <div class="container">
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                          <label for="inputState">Usuario</label>
+                                          <select id="inputState" name="user_id" class="form-control">
+                                            <option selected>Choose...</option>
+                                            {{-- @foreach ($user_fichas as $item)
+                                              <option value="{{$item->id}}">{{$item->name}}</option>
+                                            @endforeach --}}
+                                          </select>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                          <label for="fecha">Fecha:</label>
+                                          <input type="date" class="form-control" id="fecha" name="fecha">
+                                        </div>
+                                </div>
+                                </div>
+                                <hr>
+
                             <table class="table table-hover table-bordered">
                                 <thead>
                                 <tr>

@@ -16,6 +16,7 @@ class CreateFMSTestsTable extends Migration
         Schema::create('f_m_s_tests', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
+            $table->date('date');
             $table->string('santadillasPF');
             $table->string('santadillasObservaciones');
 

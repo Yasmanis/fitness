@@ -16,6 +16,7 @@ class CreateRuffierTestsTable extends Migration
         Schema::create('ruffier_tests', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
+            $table->date('date');
             $table->string('resultados');
             $table->string('fcreposo');
             $table->string('fcmaxima');

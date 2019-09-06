@@ -16,6 +16,7 @@ class CreateBurpeesTestsTable extends Migration
         Schema::create('burpees_tests', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
+            $table->date('date');
             $table->string('resultados');
             $table->timestamps();
         });

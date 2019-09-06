@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             FunctionalTrainingSeeder::class,
             HealthConditionSeeder::class,
             PerfilTanitaSeeder::class,
-            ]);
+            PlieguesPerimetrosTestSeeder::class
+        ]);
     }
 }

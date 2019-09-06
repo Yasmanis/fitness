@@ -26,9 +26,9 @@ Route::get('/user-tanita', 'HomeController@user_tanita')->name('user-tanita');
 
 
 
-Route::post('/new_fitness_evaluation','Fitness_Evaluation@store')->name('new_fitness_evaluation');
-Route::post('/user_ficha','User_Ficha@store')->name('user_ficha');
-Route::post('/user_medical_history','UserMedicalHistoryController@store')->name('user_medical_history');
+Route::post('/new_fitness_evaluation', 'Fitness_Evaluation@store')->name('new_fitness_evaluation');
+Route::post('/user_ficha', 'User_Ficha@store')->name('user_ficha');
+Route::post('/user_medical_history', 'UserMedicalHistoryController@store')->name('user_medical_history');
 
 //ver los test
 Route::get('/test/pliegues_perimetros', 'TestController@getpliegues_perimetros')->name('getpliegues_perimetros');
@@ -41,20 +41,31 @@ Route::get('/test/ruffier', 'TestController@getruffier')->name('getruffier');
 Route::get('/test/salto_vertical', 'TestController@getsalto_vertical')->name('getsalto_vertical');
 Route::get('/test/rockport', 'TestController@getrockport')->name('getrockport');
 
+//ver los vtest
+Route::get('/test/vpliegues_perimetros', 'TestController@getvpliegues_perimetros')->name('vgetpliegues_perimetros');
+Route::get('/test/vfms', 'TestController@getvfms')->name('vgetfms');
+Route::get('/test/vplancha_prono', 'TestController@getvplancha_prono')->name('vgetplancha_prono');
+Route::get('/test/vburpees', 'TestController@getvburpees')->name('vgetburpees');
+Route::get('/test/vdomin_susp_isométrica', 'TestController@getvdomin_susp_isométrica')->name('vgetdomin_susp_isométrica');
+Route::get('/test/vcooper', 'TestController@getvcooper')->name('vgetcooper');
+Route::get('/test/vruffier', 'TestController@getvruffier')->name('vgetruffier');
+Route::get('/test/vsalto_vertical', 'TestController@getvsalto_vertical')->name('vgetsalto_vertical');
+Route::get('/test/vrockport', 'TestController@getvrockport')->name('vgetrockport');
+
 //guardar los Test creados
-Route::post('/storeplieguesperimetrosTest','TestController@storeplieguesperimetrosTest')->name('storeplieguesperimetrosTest');
-Route::post('/storefmsTest','TestController@storefmsTest')->name('storefmsTest');
-Route::post('/storeplanchapronoTest','TestController@storeplanchapronoTest')->name('storeplanchapronoTest');
-Route::post('/storeburpeesTest','TestController@storeburpeesTest')->name('storeburpeesTest');
-Route::post('/storedom_susp_isometricoTest','TestController@storedom_susp_isometricoTest')->name('storedom_susp_isometricoTest');
-Route::post('/storecooperTest','TestController@storecooperTest')->name('storecooperTest');
-Route::post('/storeruffierTest','TestController@storeruffierTest')->name('storeruffierTest');
-Route::post('/storesalto_verticalTest','TestController@storesalto_verticalTest')->name('storesalto_verticalTest');
-Route::post('/storerockportTest','TestController@storerockportTest')->name('storerockportTest');
+Route::post('/storeplieguesperimetrosTest', 'TestController@storeplieguesperimetrosTest')->name('storeplieguesperimetrosTest');
+Route::post('/storefmsTest', 'TestController@storefmsTest')->name('storefmsTest');
+Route::post('/storeplanchapronoTest', 'TestController@storeplanchapronoTest')->name('storeplanchapronoTest');
+Route::post('/storeburpeesTest', 'TestController@storeburpeesTest')->name('storeburpeesTest');
+Route::post('/storedom_susp_isometricoTest', 'TestController@storedom_susp_isometricoTest')->name('storedom_susp_isometricoTest');
+Route::post('/storecooperTest', 'TestController@storecooperTest')->name('storecooperTest');
+Route::post('/storeruffierTest', 'TestController@storeruffierTest')->name('storeruffierTest');
+Route::post('/storesalto_verticalTest', 'TestController@storesalto_verticalTest')->name('storesalto_verticalTest');
+Route::post('/storerockportTest', 'TestController@storerockportTest')->name('storerockportTest');
 
 //tanita
 Route::get('/user-tanita-parameters', 'HomeController@user_tanita_parameters')->name('user-tanita-parameters');
-Route::post('/user-tanita-parameters','TanitaParametrosController@store')->name('user-tanita-parameters');
+Route::post('/user-tanita-parameters', 'TanitaParametrosController@store')->name('user-tanita-parameters');
 
 
 Route::get('training-plan', 'UploadPlainController@training_plan')->name('training-plan');

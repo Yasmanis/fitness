@@ -16,6 +16,7 @@ class CreateSaltoVerticalTestsTable extends Migration
         Schema::create('salto_vertical_tests', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
+            $table->date('date');
             $table->string('resultados');
             $table->string('notas');
             $table->timestamps();

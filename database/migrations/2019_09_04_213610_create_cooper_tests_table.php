@@ -16,6 +16,7 @@ class CreateCooperTestsTable extends Migration
         Schema::create('cooper_tests', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
+            $table->date('date');
             $table->string('resultados');
             $table->timestamps();
         });

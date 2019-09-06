@@ -12,8 +12,13 @@
       @csrf
         <div class="form-row">
           <div class="form-group col-md-4">
+<<<<<<< HEAD
             <label for="inputState">Usuarios</label>
             <select id="inputState" class="form-control">
+=======
+            <label for="inputState">Usuario</label>
+            <select id="inputState" name="user_id" class="form-control">
+>>>>>>> a733eed0dfa2134e2f3b7227169e8dbdfa77cd92
               <option selected>Choose...</option>
               @foreach ($user_fichas as $item)
                 <option value="{{$item->id}}">{{$item->name}}</option>
