@@ -3,11 +3,7 @@
 @section('content')
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
-<<<<<<< HEAD
-        <a href="">Prueba Tanita</a>
-=======
         <a href="{{ route('vgetpliegues_perimetros') }}">Visualización Pliegues Perímetros</a>
->>>>>>> 192bd471df61b1524c6f02f1992da2149d187efe
     </li>
     <li class="breadcrumb-item active">Home</li>
 </ol>
