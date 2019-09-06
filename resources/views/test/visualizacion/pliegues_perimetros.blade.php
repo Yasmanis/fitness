@@ -3,9 +3,9 @@
 @section('content')
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="/user-tanita">Prueba Tanita</a>
+        <a href="/test/vpliegues_perimetros">Visualización Pliegues Perímetros</a>
     </li>
-    <li class="breadcrumb-item active">Tanita</li>
+    <li class="breadcrumb-item active">Home</li>
 </ol>
 <div class="container">
         {{-- <div class="row">
