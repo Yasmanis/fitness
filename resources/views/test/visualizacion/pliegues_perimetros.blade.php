@@ -10,16 +10,19 @@
 <div class="container">
         <div class="row">
                 <div class="col-12">
-                        <form class="form-inline">
+                        {{-- <form method="POST" action="{{route('storeplieguesperimetrosTest')}}" class="form-inline">
+                                @csrf
                             <div class="form-group mb-2 col">
                                 <label for="inputState">Usuario</label>
-                                <select id="inputState" class="form-control col-md-3 ml-3 mr-3">
-                                  <option selected>Choose...</option>
-                                  <option>...</option>
-                                </select>
+                                <select id="inputState" name="user_id" class="form-control col-3 mr-3 ml-3">
+                                        <option selected>Choose...</option>
+                                        @foreach ($user_fichas as $item)
+                                          <option value="{{$item->id}}">{{$item->name}}</option>
+                                        @endforeach
+                                      </select>
                                 <button type="submit" class="btn btn-primary mb-2">Submit</button>
                             </div>                    
-                        </form>  
+                        </form> --}}  
                 </div>
             </div>
             <div class="row mb-3">
