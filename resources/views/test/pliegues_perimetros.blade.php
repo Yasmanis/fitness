@@ -4,9 +4,9 @@
     <!-- Breadcrumbs-->
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
-            <a href="/user-tests">Pruebas de Usuario</a>
+            <a href="{{ route('getpliegues_perimetros') }}">Pliegues Perímetros</a>
         </li>
-        <li class="breadcrumb-item active">Pruebas</li>
+        <li class="breadcrumb-item active">Home</li>
     </ol>
 
     <div class="row">
@@ -94,7 +94,7 @@
                                 </div>
                             @endif
                             <div class="d-flex mb-3">
-                                <div class="ml-auto">
+                                <div class="ml-auto mb-5">
                                     <input type="submit" class="btn btn-primary" value="Guardar">
                                 </div>
                             </div>

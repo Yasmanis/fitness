@@ -4,9 +4,9 @@
     <!-- Breadcrumbs-->
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
-            <a href="/user-tests">Pruebas de Usuario</a>
+            <a href="{{ route('getfms') }}">FMS</a>
         </li>
-        <li class="breadcrumb-item active">Pruebas</li>
+        <li class="breadcrumb-item active">Home</li>
     </ol>
 
     <div class="row">
@@ -24,7 +24,27 @@
                     
                             <form method="POST" action="{{route('storefmsTest')}}">
                                 @csrf
-                                <input type="hidden" name="user_id" value="{{auth()->id()}}">
+                        {{-- <div class="row">
+                        <div class="col-12">
+                        <form method="POST" action="{{route('storeplieguesperimetrosTest')}}" class="form-inline">
+                                @csrf
+                            <div class="form-group mb-2 col">
+                                <label for="inputState">Usuario</label>
+                                <select id="inputState" name="user_id" class="form-control col-3 mr-3 ml-3">
+                                        <option selected>Choose...</option>
+                                        @foreach ($user_fichas as $item)
+                                          <option value="{{$item->id}}">{{$item->name}}</option>
+                                        @endforeach
+                                </select>
+                                <div class="form-group col-md-3">
+                                  <label for="fecha">Fecha:</label>
+                                  <input type="date" class="form-control" id="fecha" name="fecha">
+                                </div>
+                                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                            </div>                    
+                        </form>  
+                </div>
+            </div> --}}
                             <div class="card mb-3">
                                     <div class="card-header font-weight-bold text-center bg-warning"><i class="fa fa-fw fa-exclamation-triangle"></i>DESCRIPCIÓN DE LA PRUEBA</div>
                                     <div class="card-body text-justify">

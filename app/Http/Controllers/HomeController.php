@@ -57,11 +57,6 @@ class HomeController extends Controller
         return view('dashboard.user_diagnosis');
     }
 
-    public function user_tests()
-    {
-        return view('dashboard.user_test');
-    }
-
     public function user_tanita()
     {
         return view('dashboard.user_tanita');
