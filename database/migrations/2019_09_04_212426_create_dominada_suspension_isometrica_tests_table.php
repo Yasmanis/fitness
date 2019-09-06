@@ -16,6 +16,7 @@ class CreateDominadaSuspensionIsometricaTestsTable extends Migration
         Schema::create('dominada_suspension_isometrica_tests', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
+            $table->date('date');
             $table->float('baremo_dominada');
             $table->float('baremo_isometrico');
             $table->timestamps();

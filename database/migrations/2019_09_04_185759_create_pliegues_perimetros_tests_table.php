@@ -16,6 +16,7 @@ class CreatePlieguesPerimetrosTestsTable extends Migration
         Schema::create('pliegues_perimetros_tests', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
+            $table->date('date');
             $table->float('tripcipital');
             $table->float('plieguesgemelo');
             $table->float('subescapular');
