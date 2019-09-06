@@ -3,7 +3,7 @@
 @section('content')
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="/test/vpliegues_perimetros">Visualización Pliegues Perímetros</a>
+        <a href="{{ route('vgetpliegues_perimetros') }}">Visualización Pliegues Perímetros</a>
     </li>
     <li class="breadcrumb-item active">Home</li>
 </ol>
@@ -19,7 +19,11 @@
                                         @foreach ($user_fichas as $item)
                                           <option value="{{$item->id}}">{{$item->name}}</option>
                                         @endforeach
-                                      </select>
+                                </select>
+                                <div class="form-group col-md-3">
+                                  <label for="fecha">Fecha:</label>
+                                  <input type="date" class="form-control" id="fecha" name="fecha">
+                                </div>
                                 <button type="submit" class="btn btn-primary mb-2">Submit</button>
                             </div>                    
                         </form>  
@@ -29,7 +33,7 @@
                 <table class="table table-hover table-bordered">
                     <thead>
                         <tr>
-                            <th class="text-center bg-info" colspan="1">Pliegues Grasos(mm):</th>
+                            <th class="text-center bg-info" colspan="1">FMS:</th>
                             <th class="text-center">ENE</th>
                             <th class="text-center">FEB</th>
                             <th class="text-center">MAR</th>
