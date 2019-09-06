@@ -30,9 +30,9 @@
                                           <label for="inputState">Usuario</label>
                                           <select id="inputState" name="user_id" class="form-control">
                                             <option selected>Choose...</option>
-                                            {{-- @foreach ($user_fichas as $item)
+                                            @foreach ($user_fichas as $item)
                                               <option value="{{$item->id}}">{{$item->name}}</option>
-                                            @endforeach --}}
+                                            @endforeach
                                           </select>
                                         </div>
                                         <div class="form-group col-md-4">

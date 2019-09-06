@@ -326,6 +326,8 @@
 <script src="{{ asset('theme/vendor/bootstrap/js/bootstrap.bundle.js') }}"></script>
 
 <!-- Plugin JavaScript -->
+<script src="{{ asset('theme/chartjs/Chart.min.js') }}"></script>
+
 <script src="{{ asset('theme/vendor/jquery-easing/jquery.easing.js') }}"></script>
 <!-- Custom scripts for all pages-->
 <script src="{{ asset('theme/dashboard/js/sb-admin.min.js') }}"></script>

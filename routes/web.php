@@ -41,7 +41,7 @@ Route::get('/test/ruffier', 'TestController@getruffier')->name('getruffier');
 Route::get('/test/salto_vertical', 'TestController@getsalto_vertical')->name('getsalto_vertical');
 Route::get('/test/rockport', 'TestController@getrockport')->name('getrockport');
 
-//ver los vtest
+//ver las visualizaciones de test
 Route::get('/test/vpliegues_perimetros', 'TestController@getvpliegues_perimetros')->name('vgetpliegues_perimetros');
 Route::get('/test/vfms', 'TestController@getvfms')->name('vgetfms');
 Route::get('/test/vplancha_prono', 'TestController@getvplancha_prono')->name('vgetplancha_prono');
@@ -51,6 +51,16 @@ Route::get('/test/vcooper', 'TestController@getvcooper')->name('vgetcooper');
 Route::get('/test/vruffier', 'TestController@getvruffier')->name('vgetruffier');
 Route::get('/test/vsalto_vertical', 'TestController@getvsalto_vertical')->name('vgetsalto_vertical');
 Route::get('/test/vrockport', 'TestController@getvrockport')->name('vgetrockport');
+//consultar el test segun el usuario
+Route::post('/vpliegues_perimetros', 'TestController@vpliegues_perimetros')->name('vpliegues_perimetros');
+Route::post('/vfms', 'TestController@vfms')->name('vfms');
+Route::post('/vplancha_prono', 'TestController@vplancha_prono')->name('vplancha_prono');
+Route::post('/vburpees', 'TestController@vburpees')->name('vburpees');
+Route::post('/vdomin_susp_isométrica', 'TestController@vdomin_susp_isométrica')->name('vdomin_susp_isométrica');
+Route::post('/vcooper', 'TestController@vcooper')->name('vcooper');
+Route::post('/vruffier', 'TestController@vruffier')->name('vruffier');
+Route::post('/vsalto_vertical', 'TestController@vsalto_vertical')->name('vsalto_vertical');
+Route::post('/vrockport', 'TestController@vrockport')->name('vrockport');
 
 //guardar los Test creados
 Route::post('/storeplieguesperimetrosTest', 'TestController@storeplieguesperimetrosTest')->name('storeplieguesperimetrosTest');
