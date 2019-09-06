@@ -17,7 +17,7 @@ class CreateUserFichasTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->integer('edad');
-            $table->integer('phone');
+            $table->string('phone');
             $table->string('email')->unique();
             $table->integer('id_perfil_tanita');
             $table->string('peso');
