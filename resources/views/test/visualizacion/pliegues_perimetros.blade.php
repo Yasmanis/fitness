@@ -7,32 +7,34 @@
     </li>
     <li class="breadcrumb-item active">Home</li>
 </ol>
+
 <div class="container">
-        <div class="row">
-                <div class="col-12">
-                        <form method="POST" action="{{route('vpliegues_perimetros')}}" class="form-inline">
-                                @csrf
-                            <div class="form-group mb-2 col">
-                                <label for="inputState">Usuario</label>
-                                <select id="inputState" name="user_id" class="form-control col-3 mr-3 ml-3">
-                                        <option selected>Choose...</option>
-                                        @foreach ($user_fichas as $item)
-                                            @if (session()->has('user_id') && session('user_id') == $item->id)
-                                                <option value="{{$item->id}}" selected>{{$item->name}}</option>
-                                            @else 
-                                                <option value="{{$item->id}}">{{$item->name}}</option>
-                                            @endif
-                                        @endforeach
-                                </select>
-                                <div class="form-group col-md-3">
-                                  <label for="fecha">Fecha:</label>
-                                  <input type="date" class="form-control" id="fecha" name="fecha">
-                                </div>
-                                <button type="submit" class="btn btn-primary mb-2">Submit</button>
-                            </div>                    
-                        </form>  
+        <form method="POST" action="{{route('vpliegues_perimetros')}}" class="form-inline mb-2">
+            @csrf
+                <div class="form-group mb-2">
+                    <label for="user_id" class="mr-2">Usuario:</label>
+                    <select id="user_id" name="user_id" class="form-control">
+                        <option selected>Choose...</option>
+                        @foreach ($user_fichas as $item)
+                            @if (session()->has('user_id') && session('user_id') == $item->id)
+                                <option value="{{$item->id}}" selected>{{$item->name}}</option>
+                            @else 
+                                <option value="{{$item->id}}">{{$item->name}}</option>
+                            @endif
+                        @endforeach
+                    </select>
                 </div>
-            </div>
+                <div class="form-group mb-2 mx-sm-3">
+                        <label for="date" class="mr-2">Año</label>
+                        <select id="date" name="date" class="form-control">
+                            <option selected>Choose...</option>
+                                @for ($i = 2019; $i < 2100; $i++)
+                                  <option value="{{ $i }}">{{ $i }}</option>
+                                @endfor
+                        </select>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2 my-0">Submit</button>
+        </form>  
 
             @if (session()->has('valores_test'))
                 @foreach ($collection = session('valores_test') as $item)
@@ -342,66 +344,114 @@
             </li>
         </ol>
     @endif
+        <div class="container">
+            <div class="row">
+            @if (session()->has('valores_tripcipital'))
+                <div class="col-sm">
+                    <div style="width:250px; float:left; margin:30px">
+                        <canvas id="valores_tripcipital" width="200" height="200" ></canvas> 
+                    </div>
+                </div>
+            @endif
+            
+            @if (session()->has('valores_plieguesgemelo'))
+                <div class="col-sm">
+                    <div style="width:250px; float:left; margin:30px">
+                        <canvas id="valores_plieguesgemelo" width="200" height="200" ></canvas> 
+                    </div>
+                </div>
+            @endif
+            
+            @if (session()->has('valores_subescapular'))
+                <div class="col-sm">
+                    <div style="width:250px; float:left; margin:30px">
+                        <canvas id="valores_subescapular" width="200" height="200" ></canvas> 
+                    </div>
+                </div>
+            @endif
+            </div>
 
-    <div class="col">
+            <div class="row">
+            @if (session()->has('valores_suprailiaco'))
+                <div class="col-sm">
+                    <div style="width:250px; float:left; margin:30px">
+                        <canvas id="valores_suprailiaco" width="200" height="200" ></canvas> 
+                    </div>
+                </div>
+            @endif
+            
+            @if (session()->has('valores_abdominal'))
+                <div class="col-sm">
+                    <div style="width:250px; float:left; margin:30px">
+                        <canvas id="valores_abdominal" width="200" height="200" ></canvas> 
+                    </div>
+                </div>
+            @endif
+            
+            @if (session()->has('valores_brazo'))
+                <div class="col-sm">
+                    <div style="width:250px; float:left; margin:30px">
+                        <canvas id="valores_brazo" width="200" height="200" ></canvas> 
+                    </div>
+                </div>
+            @endif
+            </div>
 
-        @if (session()->has('valores_tripcipital'))
-        <div style="width:250px; float:left; margin:30px">
-            <canvas id="valores_tripcipital" width="200" height="200" ></canvas> 
-        </div>
-        @endif
-        @if (session()->has('valores_plieguesgemelo'))
-        <div style="width:250px; float:left; margin:30px">
-            <canvas id="valores_plieguesgemelo" width="200" height="200" ></canvas> 
-        </div>
-        @endif
-        @if (session()->has('valores_subescapular'))
-        <div style="width:250px; float:left; margin:30px">
-            <canvas id="valores_subescapular" width="200" height="200" ></canvas> 
-        </div>
-        @endif
-        @if (session()->has('valores_suprailiaco'))
-        <div style="width:250px; float:left; margin:30px">
-            <canvas id="valores_suprailiaco" width="200" height="200" ></canvas> 
-        </div>
-        @endif
-        @if (session()->has('valores_abdominal'))
-        <div style="width:250px; float:left; margin:30px">
-            <canvas id="valores_abdominal" width="200" height="200" ></canvas> 
-        </div>
-        @endif
-        @if (session()->has('valores_brazo'))
-        <div style="width:250px; float:left; margin:30px">
-            <canvas id="valores_brazo" width="200" height="200" ></canvas> 
-        </div>
-        @endif
-        @if (session()->has('valores_pecho'))
-        <div style="width:250px; float:left; margin:30px">
-            <canvas id="valores_pecho" width="200" height="200" ></canvas> 
-        </div>
-        @endif
-        @if (session()->has('valores_abdomen'))
-        <div style="width:250px; float:left; margin:30px">
-            <canvas id="valores_abdomen" width="200" height="200" ></canvas> 
-        </div>
-        @endif
-        @if (session()->has('valores_cadera'))
-        <div style="width:250px; float:left; margin:30px">
-            <canvas id="valores_cadera" width="200" height="200" ></canvas> 
-        </div>
-        @endif
-        @if (session()->has('valores_muslo'))
-        <div style="width:250px; float:left; margin:30px">
-            <canvas id="valores_muslo" width="200" height="200" ></canvas> 
-        </div>
-        @endif
-        @if (session()->has('valores_perimetrogemelo'))
-        <div style="width:250px; float:left; margin:30px">
-            <canvas id="valores_perimetrogemelo" width="200" height="200" ></canvas> 
-        </div>
-        @endif
+            <div class="row">
+            @if (session()->has('valores_pecho'))
+                <div class="col-sm">
+                    <div style="width:250px; float:left; margin:30px">
+                        <canvas id="valores_pecho" width="200" height="200" ></canvas> 
+                    </div>
+                </div>
+            @endif
+            
+            @if (session()->has('valores_abdomen'))
+                <div class="col-sm">
+                    <div style="width:250px; float:left; margin:30px">
+                        <canvas id="valores_abdomen" width="200" height="200" ></canvas> 
+                    </div>
+                </div>
+            @endif
+            
+            @if (session()->has('valores_cadera'))
+                <div class="col-sm">
+                    <div style="width:250px; float:left; margin:30px">
+                        <canvas id="valores_cadera" width="200" height="200" ></canvas> 
+                    </div>
+                </div>
+            @endif
+            </div>
 
-    </div>
+            <div class="row">
+            @if (session()->has('valores_muslo'))
+                <div class="col-sm">
+                    <div style="width:250px; float:left; margin:30px">
+                        <canvas id="valores_muslo" width="200" height="200" ></canvas> 
+                    </div>
+                </div>
+            @endif
+            
+            @if (session()->has('valores_perimetrogemelo'))
+                <div class="col-sm">
+                    <div style="width:250px; float:left; margin:30px">
+                        <canvas id="valores_perimetrogemelo" width="200" height="200" ></canvas> 
+                    </div>
+                </div>
+                <div class="col-sm"></div>
+            @endif
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
 @endsection
 

@@ -23,12 +23,11 @@
                     <div class="tab-pane fade show active" id="pills-test1" role="tabpanel" aria-labelledby="pills-test1-tab">
                             <form method="POST" action="{{route('storeplieguesperimetrosTest')}}">
                                 @csrf
-                                <div class="container">
-                                    
+                                <div class="container">                                    
                                     <div class="form-row">
                                         <div class="form-group col-md-4">
-                                          <label for="inputState">Usuario</label>
-                                          <select id="inputState" name="user_id" class="form-control">
+                                          <label for="user_id">Usuario</label>
+                                          <select id="user_id" name="user_id" class="form-control">
                                             <option selected>Choose...</option>
                                             @foreach ($user_fichas as $item)
                                               <option value="{{$item->id}}">{{$item->name}}</option>
@@ -36,8 +35,13 @@
                                           </select>
                                         </div>
                                         <div class="form-group col-md-4">
-                                          <label for="fecha">Fecha:</label>
-                                          <input type="date" class="form-control" id="fecha" name="fecha">
+                                            <label for="date">Año</label>
+                                            <select id="date" name="date" class="form-control">
+                                                <option selected>Choose...</option>
+                                                    @for ($i = 2019; $i < 2100; $i++)
+                                                      <option value="{{ $i }}">{{ $i }}</option>
+                                                    @endfor
+                                            </select>
                                         </div>
                                 </div>
                                 </div>

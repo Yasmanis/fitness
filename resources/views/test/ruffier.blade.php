@@ -4,7 +4,7 @@
     <!-- Breadcrumbs-->
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
-            <a href="/user-tests">Pruebas de Usuario</a>
+                <a href="{{ route('vgetruffier') }}">Ruffier</a>
         </li>
         <li class="breadcrumb-item active">Pruebas</li>
     </ol>
@@ -23,8 +23,29 @@
                     <div class="tab-pane fade show active" id="pills-test1" role="tabpanel" aria-labelledby="pills-test1-tab">
                             
                         <form method="POST" action="{{route('storeruffierTest')}}">
-                                @csrf
-                                <input type="hidden" name="user_id" value="{{auth()->id()}}">
+                                @csrf  
+                                <div class="container">                                    
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                              <label for="user_id">Usuario</label>
+                                              <select id="user_id" name="user_id" class="form-control">
+                                                <option selected>Choose...</option>
+                                                @foreach ($user_fichas as $item)
+                                                  <option value="{{$item->id}}">{{$item->name}}</option>
+                                                @endforeach
+                                              </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="date">Año</label>
+                                                <select id="date" name="date" class="form-control">
+                                                    <option selected>Choose...</option>
+                                                        @for ($i = 2019; $i < 2100; $i++)
+                                                          <option value="{{ $i }}">{{ $i }}</option>
+                                                        @endfor
+                                                </select>
+                                            </div>
+                                    </div>
+                                    </div>                              
                         <div class="card mb-3">
                                     <div class="card-header font-weight-bold text-center bg-warning"><i class="fa fa-fw fa-exclamation-triangle"></i>DESCRIPCIÓN DE LA PRUEBA</div>
                                     <div class="card-body text-justify">
@@ -86,7 +107,35 @@
                                                 </table>
                                             </div>
                                         </div>
-                                    </div>                           
+                                    </div>     
+                                    <div class="row">
+                                            <div class="col">
+                                                <table class="table table-hover table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center bg-info">Usuario</th>
+                                                            <th class="text-center bg-info">F.C en Reposo</th>
+                                                            <th class="text-center bg-info">F.C Máxima</th>
+                                                            <th class="text-center bg-info">F.C de Reserva</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="w-25 text-center">{{ Auth::user()->name }}</td>
+                                                            <td class="w-25 text-center">
+                                                                <input class="text-center h-100 w-100 border-0" type="text" name="fcreposo" required> 
+                                                            </td>
+                                                            <td class="w-25 text-center">
+                                                                <input class="text-center h-100 w-100 border-0" type="text" name="fcmaxima" required> 
+                                                            </td>
+                                                            <td class="w-25 text-center">
+                                                                <input class="text-center h-100 w-100 border-0" type="text" name="fcreserva" required> 
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>                      
                                     <div class="row">
                                         <div class="col">
                                             <table class="table table-hover table-bordered">
@@ -108,35 +157,7 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <table class="table table-hover table-bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="text-center bg-info">Usuario</th>
-                                                        <th class="text-center bg-info">F.C en Reposo</th>
-                                                        <th class="text-center bg-info">F.C Máxima</th>
-                                                        <th class="text-center bg-info">F.C de Reserva</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="w-25 text-center">{{ Auth::user()->name }}</td>
-                                                        <td class="w-25 text-center">
-                                                            <input class="text-center h-100 w-100 border-0" type="text" name="fcreposo" required> 
-                                                        </td>
-                                                        <td class="w-25 text-center">
-                                                            <input class="text-center h-100 w-100 border-0" type="text" name="fcmaxima" required> 
-                                                        </td>
-                                                        <td class="w-25 text-center">
-                                                            <input class="text-center h-100 w-100 border-0" type="text" name="fcreserva" required> 
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                                    </div>                                    
                                     @if (session()->has('infostoreruffierTest'))
                                         <div class="alert alert-success text-center" role="alert">
                                             <strong>{{ session('infostoreruffierTest') }}!</strong>

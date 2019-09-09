@@ -24,27 +24,28 @@
                     
                             <form method="POST" action="{{route('storefmsTest')}}">
                                 @csrf
-                        {{-- <div class="row">
-                        <div class="col-12">
-                        <form method="POST" action="{{route('storeplieguesperimetrosTest')}}" class="form-inline">
-                                @csrf
-                            <div class="form-group mb-2 col">
-                                <label for="inputState">Usuario</label>
-                                <select id="inputState" name="user_id" class="form-control col-3 mr-3 ml-3">
-                                        <option selected>Choose...</option>
-                                        @foreach ($user_fichas as $item)
-                                          <option value="{{$item->id}}">{{$item->name}}</option>
-                                        @endforeach
-                                </select>
-                                <div class="form-group col-md-3">
-                                  <label for="fecha">Fecha:</label>
-                                  <input type="date" class="form-control" id="fecha" name="fecha">
-                                </div>
-                                <button type="submit" class="btn btn-primary mb-2">Submit</button>
-                            </div>                    
-                        </form>  
-                </div>
-            </div> --}}
+                                <div class="container">                                    
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                              <label for="user_id">Usuario</label>
+                                              <select id="user_id" name="user_id" class="form-control">
+                                                <option selected>Choose...</option>
+                                                @foreach ($user_fichas as $item)
+                                                  <option value="{{$item->id}}">{{$item->name}}</option>
+                                                @endforeach
+                                              </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="date">Año</label>
+                                                <select id="date" name="date" class="form-control">
+                                                    <option selected>Choose...</option>
+                                                        @for ($i = 2019; $i < 2100; $i++)
+                                                          <option value="{{ $i }}">{{ $i }}</option>
+                                                        @endfor
+                                                </select>
+                                            </div>
+                                    </div>
+                                    </div>
                             <div class="card mb-3">
                                     <div class="card-header font-weight-bold text-center bg-warning"><i class="fa fa-fw fa-exclamation-triangle"></i>DESCRIPCIÓN DE LA PRUEBA</div>
                                     <div class="card-body text-justify">

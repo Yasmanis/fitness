@@ -50,7 +50,7 @@ Route::get('/test/vcooper', 'TestController@getvcooper')->name('vgetcooper');
 Route::get('/test/vruffier', 'TestController@getvruffier')->name('vgetruffier');
 Route::get('/test/vsalto_vertical', 'TestController@getvsalto_vertical')->name('vgetsalto_vertical');
 Route::get('/test/vrockport', 'TestController@getvrockport')->name('vgetrockport');
-//consultar el test segun el usuario
+//consultar el test segun el usuario (POST)
 Route::post('/vpliegues_perimetros', 'TestController@vpliegues_perimetros')->name('vpliegues_perimetros');
 Route::post('/vfms', 'TestController@vfms')->name('vfms');
 Route::post('/vplancha_prono', 'TestController@vplancha_prono')->name('vplancha_prono');

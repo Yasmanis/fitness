@@ -3,12 +3,12 @@
 @section('content')
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="{{ route('vgetfms') }}">Visualización FMS</a>
+        <a href="{{ route('vgetrockport') }}">Visualización Rockport</a>
     </li>
     <li class="breadcrumb-item active">Home</li>
 </ol>
 <div class="container">
-        <form method="POST" action="{{route('vfms')}}" class="form-inline mb-2">
+        <form method="POST" action="{{route('vrockport')}}" class="form-inline mb-2">
                 @csrf
                     <div class="form-group mb-2">
                         <label for="user_id" class="mr-2">Usuario:</label>
@@ -55,7 +55,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Total:</td>
+                            <td>F.C:</td>
                             <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
                             <td><input class="text-center h-100 w-100 border-0" type="text"></td>
                             <td><input class="text-center h-100 w-100 border-0" type="text"></td>
@@ -69,8 +69,7 @@
                             <td><input class="text-center h-100 w-100 border-0" type="text"></td>
                             <td><input class="text-center h-100 w-100 border-0" type="text"></td>
                         </tr>            
-                        <tr>
-                            <td>Observaciones:</td>
+                            <td>Distancia:</td>
                             <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
                             <td><input class="text-center h-100 w-100 border-0" type="text"></td>
                             <td><input class="text-center h-100 w-100 border-0" type="text"></td>
@@ -84,6 +83,21 @@
                             <td><input class="text-center h-100 w-100 border-0" type="text"></td>
                             <td><input class="text-center h-100 w-100 border-0" type="text"></td>
                         </tr>            
+                            <td>Tiempo:</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                             
                         
                     </tbody>
                     </table>
