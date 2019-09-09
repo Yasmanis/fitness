@@ -38,7 +38,7 @@
                 <table class="table table-hover table-bordered">
                     <thead>
                         <tr>
-                            <th class="text-center bg-info" colspan="1">FMS:</th>
+                            <th class="text-center bg-info" colspan="1"></th>
                             <th class="text-center">ENE</th>
                             <th class="text-center">FEB</th>
                             <th class="text-center">MAR</th>
