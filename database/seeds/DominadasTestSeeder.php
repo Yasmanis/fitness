@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 /* use Faker\Generator as Faker; */
 
-class PlieguesPerimetrosTestSeeder extends Seeder
+class DominadasTestSeeder extends Seeder
 {
     /**
      * Run the database seeds.
