@@ -23,7 +23,15 @@ class DatabaseSeeder extends Seeder
             FunctionalTrainingSeeder::class,
             HealthConditionSeeder::class,
             PerfilTanitaSeeder::class,
-            PlieguesPerimetrosTestSeeder::class
+            PlieguesPerimetrosTestSeeder::class,
+            BurpeesTestSeeder::class,
+            CooperTestSeeder::class,
+            DominadasTestSeeder::class,
+            FmsTestSeeder::class,
+            PlanchaPronoTestSeeder::class,
+            RockportTestSeeder::class,
+            RuffierTestSeeder::class,
+            SaltoVerticalTestSeeder::class
         ]);
     }
 }

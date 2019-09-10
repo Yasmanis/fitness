@@ -81,3 +81,7 @@ Route::get('training-plan', 'UploadPlainController@training_plan')->name('traini
 Route::post('training-plan', 'UploadPlainController@training_plan_post')->name('training-plan-post');
 
 Route::get('training-plan-template', 'UploadPlainController@training_plan_template')->name('training-plan-template');
+
+// DataTables  Listar User, Eliminar 
+Route::get('/list-users', 'HomeController@list_users')->name('list-users');
+Route::get('/user/delete/{id}', 'HomeController@delete_user')->name('delete-user');

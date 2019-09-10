@@ -14,7 +14,7 @@ class PlieguesPerimetrosTestSeeder extends Seeder
     {
         for ($j=0; $j < 10; $j++) { 
 
-            for ($i=0; $i < 10; $i++) { 
+            for ($i=0; $i < 12; $i++) { 
                 DB::table('pliegues_perimetros_tests')->insert([
                     [
                         'user_id' => $j + 1, 

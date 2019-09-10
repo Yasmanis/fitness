@@ -11,10 +11,13 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'DeivFit') }}</title>
-    <!-- Bootstrap core CSS -->
-    <link href="{{ asset('theme/vendor/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="{{ asset('datatables/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('datatables/css/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+
     <!-- Custom fonts for this template -->
     <link href="{{ asset('theme/vendor/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
+
     <!-- Custom styles for this template-->
     <link href="{{ asset('theme/dashboard/css/sb-admin.css') }}" rel="stylesheet">
 
@@ -327,14 +330,15 @@
         </div>
     </div>
 </div>
-<!-- Bootstrap core JavaScript -->
-<script src="{{ asset('theme/vendor/jquery/jquery.js') }}"></script>
-<script src="{{ asset('theme/vendor/bootstrap/js/bootstrap.bundle.js') }}"></script>
+<!-- DataTables JavaScript -->
+<script src="{{ asset('datatables/js/jquery-3.3.1.js') }}"></script>
+<script src="{{ asset('datatables/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('datatables/js/dataTables.bootstrap4.min.js') }}"></script>
 
 <!-- Plugin JavaScript -->
-<script src="{{ asset('theme/chartjs/Chart.min.js') }}"></script>
+{{-- <script src="{{ asset('theme/chartjs/Chart.min.js') }}"></script> --}}
 
-<script src="{{ asset('theme/vendor/jquery-easing/jquery.easing.js') }}"></script>
+{{-- <script src="{{ asset('theme/vendor/jquery-easing/jquery.easing.js') }}"></script> --}}
 <!-- Custom scripts for all pages-->
 <script src="{{ asset('theme/dashboard/js/sb-admin.min.js') }}"></script>
 
