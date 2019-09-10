@@ -17,40 +17,40 @@ class CreateFMSTestsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('user_id');
             $table->date('date');
-            $table->string('santadillasPF');
-            $table->string('santadillasObservaciones');
+            $table->integer('sentadillasPF')->default(0);
+            $table->string('sentadillasObservaciones')->default("M");
 
-            $table->string('paso_vallaI');
-            $table->string('paso_vallaD');
-            $table->string('paso_vallaPF');
-            $table->string('paso_vallaObservaciones');
+            $table->integer('paso_vallaI')->default(0);
+            $table->integer('paso_vallaD')->default(0);
+            $table->integer('paso_vallaPF')->default(0);
+            $table->string('paso_vallaObservaciones')->default("M");
 
-            $table->string('estocada_lineaI');
-            $table->string('estocada_lineaD');
-            $table->string('estocada_lineaPF');
-            $table->string('estocada_lineaObservaciones');
+            $table->integer('estocada_lineaI')->default(0);
+            $table->integer('estocada_lineaD')->default(0);
+            $table->integer('estocada_lineaPF')->default(0);
+            $table->string('estocada_lineaObservaciones')->default("M");
 
-            $table->string('movilidad_hombrosI');
-            $table->string('movilidad_hombrosD');
-            $table->string('movilidad_hombrosPF');
-            $table->string('movilidad_hombrosObservaciones');
+            $table->integer('movilidad_hombrosI')->default(0);
+            $table->integer('movilidad_hombrosD')->default(0);
+            $table->integer('movilidad_hombrosPF')->default(0);
+            $table->string('movilidad_hombrosObservaciones')->default("M");
 
-            $table->string('elev_activa_pierna_rectaI');
-            $table->string('elev_activa_pierna_rectaD');
-            $table->string('elev_activa_pierna_rectaPF');
-            $table->string('elev_activa_pierna_rectaObservaciones');
+            $table->integer('elev_activa_pierna_rectaI')->default(0);
+            $table->integer('elev_activa_pierna_rectaD')->default(0);
+            $table->integer('elev_activa_pierna_rectaPF')->default(0);
+            $table->string('elev_activa_pierna_rectaObservaciones')->default("M");
 
-            $table->string('estab_tronco_en_flexionI');
-            $table->string('estab_tronco_en_flexionD');
-            $table->string('estab_tronco_en_flexionPF');
-            $table->string('estab_tronco_en_flexionObservaciones');
+            $table->integer('estab_tronco_en_flexionI')->default(0);
+            $table->integer('estab_tronco_en_flexionD')->default(0);
+            $table->integer('estab_tronco_en_flexionPF')->default(0);
+            $table->string('estab_tronco_en_flexionObservaciones')->default("M");
 
-            $table->string('estab_tronco_en_rotacionI');
-            $table->string('estab_tronco_en_rotacionD');
-            $table->string('estab_tronco_en_rotacionPF');
-            $table->string('estab_tronco_en_rotacionObservaciones');
+            $table->integer('estab_tronco_en_rotacionI')->default(0);
+            $table->integer('estab_tronco_en_rotacionD')->default(0);
+            $table->integer('estab_tronco_en_rotacionPF')->default(0);
+            $table->string('estab_tronco_en_rotacionObservaciones')->default("M");
 
-            $table->string('total');
+            $table->string('total')->default(0);
             $table->timestamps();
         });
     }

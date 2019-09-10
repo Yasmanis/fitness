@@ -17,9 +17,10 @@ class SaltoVerticalTestSeeder extends Seeder
             for ($i=0; $i < 12; $i++) { 
                 DB::table('salto_vertical_tests')->insert([
                     [
-                        'user_id' => $j + 1, 
-                        'resultado' => random_int(0,10), 
-                        'nota' => random_int(0,10), 
+                        'user_id' => $j + 1,
+                        'date' => '2018-' . (string) ($i + 1) . '-' . (string) ($i + 2),
+                        'resultados' => random_int(0, 10),
+                        'notas' => random_int(0, 5),
                     ],
                 ]);
             }

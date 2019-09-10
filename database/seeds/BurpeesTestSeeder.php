@@ -12,13 +12,14 @@ class BurpeesTestSeeder extends Seeder
      */
     public function run()
     {
-        for ($j=0; $j < 10; $j++) { 
+        for ($j = 0; $j < 10; $j++) {
 
-            for ($i=0; $i < 12; $i++) { 
+            for ($i = 0; $i < 12; $i++) {
                 DB::table('burpees_tests')->insert([
                     [
-                        'user_id' => $j + 1, 
-                        'resultado' => random_int(0,10), 
+                        'user_id' => $j + 1,
+                        'date' => '2018-' . (string) ($i + 1) . '-' . (string) ($i + 2),
+                        'resultados' => random_int(0, 10),
                     ],
                 ]);
             }

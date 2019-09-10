@@ -17,8 +17,8 @@ class CreateDominadaSuspensionIsometricaTestsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('user_id');
             $table->date('date');
-            $table->float('baremo_dominada');
-            $table->float('baremo_isometrico');
+            $table->float('tiempo');
+            $table->integer('cantidad');
             $table->timestamps();
         });
     }

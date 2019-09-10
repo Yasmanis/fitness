@@ -18,8 +18,9 @@ class DominadasTestSeeder extends Seeder
                 DB::table('dominada_suspension_isometrica_tests')->insert([
                     [
                         'user_id' => $j + 1, 
-                        'tiempo' => random_int(10,60), 
-                        'cantidad' => random_int(0,10), 
+                        'date' => '2018-' . (string) ($i + 1) . '-' . (string) ($i + 2),
+                        'tiempo' => random_int(10,60) * 1.1, 
+                        'cantidad' => random_int(0,20), 
                     ],
                 ]);
             }

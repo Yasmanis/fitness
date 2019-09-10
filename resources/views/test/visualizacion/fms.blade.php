@@ -55,7 +55,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Total:</td>
+                            <td>Sentadillas con brazos:</td>
                             <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
                             <td><input class="text-center h-100 w-100 border-0" type="text"></td>
                             <td><input class="text-center h-100 w-100 border-0" type="text"></td>
@@ -71,6 +71,201 @@
                         </tr>            
                         <tr>
                             <td>Observaciones:</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                        <tr>
+                            <td>Paso de valla:</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                        <tr>
+                            <td>Observaciones:</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                        <tr>
+                            <td>Estocada en línea:</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                        <tr>
+                            <td>Observaciones:</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                        <tr>
+                            <td>Movilidad de hombros:</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                        <tr>
+                            <td>Observaciones:</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                        <tr>
+                            <td>Elevación activa con pierna recta:</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                        <tr>
+                            <td>Observaciones:</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                        <tr>
+                            <td>Estabilidad de tronco en flexión :</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                        <tr>
+                            <td>Observaciones:</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                        <tr>
+                            <td>Estabilidad de tronco en rotación:</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                        <tr>
+                            <td>Observaciones:</td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                            <td><input class="text-center h-100 w-100 border-0" type="text"></td>
+                        </tr>            
+                        <tr>
+                            <td>Total:</td>
                             <td><input class="text-center h-100 w-100 border-0" type="text" disabled></td>                
                             <td><input class="text-center h-100 w-100 border-0" type="text"></td>
                             <td><input class="text-center h-100 w-100 border-0" type="text"></td>

@@ -18,6 +18,7 @@ class RockportTestSeeder extends Seeder
                 DB::table('rockport_tests')->insert([
                     [
                         'user_id' => $j + 1, 
+                        'date' => '2018-' . (string) ($i + 1) . '-' . (string) ($i + 2),
                         'fc' => random_int(50,100), 
                         'distancia' => random_int(50,200), 
                         'tiempo' => random_int(20,60), 
